@@ -1,0 +1,7 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# 这里的点号 "." 代表当前目录
+# 它会自动把当前目录下所有的 yaml 文件都加载进去
+resources:
+- .
