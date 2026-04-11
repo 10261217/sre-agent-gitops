@@ -17,9 +17,7 @@ spec:
       labels: { app: ollama }
     spec:
       containers:
-      - args: 
-        - /usr/local/bin/ollama
-        env: 
+      - env: 
         - name: HTTP_PROXY 
           value: http://10.81.9.159:7897
         - name: HTTPS_PROXY 
