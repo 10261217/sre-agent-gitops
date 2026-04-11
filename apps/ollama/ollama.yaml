@@ -16,14 +16,18 @@ spec:
     metadata:
       labels: { app: ollama }
     spec:
+      dnsPolicy: None
+      dnsConfig: 
+        nameservers: 
+        - 8.8.8.8,223,5,5,5
       containers:
       - env: 
         - name: HTTP_PROXY 
-          value: ""
+          value: "http://10.81.9.159:7897"
         - name: HTTPS_PROXY 
-          value: ""
+          value: "http://10.81.9.159:7897"
         - name: NO_PROXY 
-          value: localhost,127.0.0.1
+          value: localhost,127.0.0.1,.cluster.local
         name: ollama
         image: ollama/ollama:latest
         ports:
