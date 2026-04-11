@@ -17,11 +17,6 @@ spec:
       labels: { app: ollama }
     spec:
       containers:
-      - env: 
-        - name: HTTP_PROXY 
-          value: http://10.81.9.159:7897
-        - name: HTTPS_PROXY 
-          value: http://10.81.9.159:7897 
         name: ollama
         image: ollama/ollama:latest
         ports:
