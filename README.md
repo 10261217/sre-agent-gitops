@@ -7,3 +7,5 @@
 ```
 kubectl edit deployment argocd-repo-server -n argocd
 ```
+<b>演示结果如下（未做虚拟机和宿主机的映射）</b>
+<img width="1425" height="301" alt="image" src="https://github.com/user-attachments/assets/d35c68e7-be13-4b5f-9dcf-65b9c31d7494" />
