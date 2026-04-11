@@ -19,9 +19,11 @@ spec:
       containers:
       - env: 
         - name: HTTP_PROXY 
-          value: http://10.81.9.159:7897
+          value: ""
         - name: HTTPS_PROXY 
-          value: http://10.81.9.159:7897
+          value: ""
+        - name: NO_PROXY 
+          value: localhost,127.0.0.1
         name: ollama
         image: ollama/ollama:latest
         ports:
